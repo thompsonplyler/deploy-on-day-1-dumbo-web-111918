@@ -2901,6 +2901,34 @@ input.hs-button.primary.large{
   margin-top: 205px;
 }
 
+#bgvid {
+  background: none #aaa !important;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+}
+#bgvid {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+	-ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -100;
+    background: url(video-bg.jpg) no-repeat;
+    background-size: cover; 
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(video-bg.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
 
 .page-title, .top-page-title {
   /*background: url(../img/plaza_espana.jpg) no-repeat top center;*/
